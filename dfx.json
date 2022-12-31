@@ -1,0 +1,28 @@
+{
+  "canisters": {
+    "DBlogger_backend": {
+      "main": "src/DBlogger_backend/main.mo",
+      "type": "motoko"
+    },
+    "DBlogger_frontend": {
+      "dependencies": [
+        "DBlogger_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/DBlogger_frontend/src/index.html"
+      },
+      "source": [
+        "src/DBlogger_frontend/assets",
+        "dist/DBlogger_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "version": 1
+}
