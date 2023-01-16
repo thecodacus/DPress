@@ -1,7 +1,7 @@
 import type { GatsbyConfig } from "gatsby";
 import path from "path";
 require("dotenv").config({
-  path: `.env`,
+  path: `.env.${process.env.DFX_NETWORK}`,
 })
 function initCanisterEnv() {
   let localCanisters: any, prodCanisters: any;
